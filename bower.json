@@ -1,0 +1,25 @@
+{
+  "name": "builder",
+  "version": "0.0.1",
+  "description": "WordPress Child Theme Generator",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Andy Tran <hello@andytran.me>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andyhqtran/Builder",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "jszip": "Stuk/jszip#~2.5.0",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

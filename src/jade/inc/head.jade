@@ -1,0 +1,23 @@
+head
+  meta(charset="utf-8")/
+  title=name
+  meta(name="description"
+       content=description)/
+  meta(http-equiv="X-UA-Compatible"
+         content="IE=edge,chrome=1")/
+  if responsive
+    meta(name="viewport"
+         content="width=device-width, initial-scale=1, user-scalable=no")/
+
+  // Fonts
+  link(rel="stylesheet"
+       type="text/css"
+       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800")
+
+  // Stylesheets
+  // bower:css
+  link(rel='stylesheet', href='../../../public/components/normalize-css/normalize.css')
+  // endbower
+  link(rel="stylesheet"
+       type="text/css"
+       href="css/style.css?v=#{version}")/
