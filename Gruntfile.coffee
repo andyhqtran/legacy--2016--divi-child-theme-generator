@@ -38,6 +38,7 @@ module.exports = (grunt) ->
     wiredep:
       dev:
         options:
+          ignorePath: '.build/'
           dependencies: true
           devDependencies: true
         src: ['**/*.jade']

@@ -31,6 +31,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Selection
+::selection {
+  background: rgba($black, 0.2);
+}
+
+// Anchor
+a {
+  color: $gray;
+}
+
 // Dashboard (Parent Block)
 .dashboard {
   display: flex;

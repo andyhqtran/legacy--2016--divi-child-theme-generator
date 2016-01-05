@@ -1,3 +1,32 @@
 &-content {
   width: 100%;
+
+  // Panel (Element)
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  // Info (Element)
+  &__wrap {
+    padding: rem(40) rem(20);
+
+    h3 {
+      color: $gray;
+      margin: 0 0 rem(10);
+      font-weight: $light;
+    }
+
+    p {
+      margin: 0 0 rem(40);
+      line-height: rem(16);
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }
