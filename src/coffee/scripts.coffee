@@ -40,3 +40,18 @@ $('#form__author_name').keyup ->
 $('#form__author_url').keyup ->
   authorUrl = $(this).val()
   console.log('Author URL: ' + authorUrl)
+
+# Parent Theme Auto Complete
+availableThemes = [
+  'Extra',
+  'Divi',
+  'twentyfifteen',
+  'twentyfourteen',
+  'twentythirteen'
+]
+
+$('#form__parent_theme_name').autocomplete({
+  source: availableThemes
+}, {
+  appendTo: $('#form__parent_theme_name').parent()
+})

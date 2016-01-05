@@ -139,7 +139,7 @@ module.exports = (grunt) ->
 
       sass:
         files: '**/*.{scss,sass}'
-        tasks: ['sass:dev', 'postcss:dev', 'notify:sass']
+        tasks: ['sass:dev', 'notify:sass']
 
       coffee:
         files: ['**/*.coffee']

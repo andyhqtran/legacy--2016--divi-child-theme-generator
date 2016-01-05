@@ -52,7 +52,6 @@ a {
   margin: 100px auto;
   border-radius: $dashboard-border-radius;
   box-shadow: $dashboard-box-shadow;
-  overflow: hidden;
 
   // Sidebar (Block)
   @import "partials/sidebar";
@@ -109,6 +108,10 @@ a {
         visibility: visible;
       }
     }
+
+    &:valid {
+      color: $gray;
+    }
   }
 
   button {
@@ -121,4 +124,31 @@ a {
     color: $white;
     letter-spacing: rem(2);
   }
+}
+
+// AutoComplete
+.ui-autocomplete {
+  z-index: 100;
+  position: absolute !important;
+  top: 60% !important;
+  left: rem(20) !important;
+  list-style: none;
+  background: $white;
+  width: 80% !important;
+  padding: 0;
+  box-shadow: 0 rem(2) rem(10) rgba($black, 0.1);
+  box-sizing: border-box;
+
+  li {
+    padding: rem(20);
+
+    &:hover {
+      background: #F7F7F7;
+      color: $gray;
+    }
+  }
+}
+
+.ui-helper-hidden-accessible {
+  display: none !important;
 }
