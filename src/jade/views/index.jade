@@ -28,7 +28,8 @@ block content
 
       // Panel:Active (Element:Modifier)
       .dashboard-content__panel.dashboard-content__panel--active(data-panel='home')
-        form
+        form#form(method='get'
+                  action='')
 
           .input-group
             input(type='text'
@@ -40,7 +41,8 @@ block content
           .input-group
             input(type='text'
                   id='form__child_theme_url'
-                  placeholder='Theme Name Url')
+                  placeholder='Theme Name Url'
+                  required='')
             label(for='form__child_theme_url') Theme URL
 
           .input-group
@@ -60,17 +62,20 @@ block content
           .input-group
             input(type='text'
                   id='form__author_name'
-                  placeholder='Author')
+                  placeholder='Author'
+                  required='')
             label(for='form__author_name') Author
 
           .input-group
             input(type='text'
                   id='form__author_url'
-                  placeholder='Author Url')
+                  placeholder='Author Url'
+                  required='')
             label(for='form__author_url') Author URL
 
           .input-group
-            button(type='submit') Create
+            button(type='submit'
+                   id='form__button') Create
 
       // Panel (Element)
       .dashboard-content__panel(data-panel='about')

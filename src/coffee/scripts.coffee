@@ -11,36 +11,6 @@ $('.dashboard-nav__item').on 'click', (e) ->
 
   console.log(itemId)
 
-# Child Theme Name (Val)
-$('#form__child_theme_name').keyup ->
-  childThemeName = $(this).val()
-  console.log('Theme Name: ' + childThemeName)
-
-# Child Theme URL (Val)
-$('#form__child_theme_url').keyup ->
-  childThemeUrl = $(this).val()
-  console.log('Theme URL: ' + childThemeUrl)
-
-# Version (Val)
-$('#form__version').keyup ->
-  version = $(this).val()
-  console.log('Version: ' + version)
-
-# Parent Theme Name (Val)
-$('#form__parent_theme_name').keyup ->
-  parentThemeName = $(this).val()
-  console.log('Parent Theme: ' + parentThemeName)
-
-# Author Name (Val)
-$('#form__author_name').keyup ->
-  authorName = $(this).val()
-  console.log('Author Name: ' + authorName)
-
-# Author URL (Val)
-$('#form__author_url').keyup ->
-  authorUrl = $(this).val()
-  console.log('Author URL: ' + authorUrl)
-
 # Parent Theme Auto Complete
 availableThemes = [
   'Extra',
@@ -55,3 +25,34 @@ $('#form__parent_theme_name').autocomplete({
 }, {
   appendTo: $('#form__parent_theme_name').parent()
 })
+
+$('#form').submit ->
+
+  childThemeName = $('#form__child_theme_name').val()
+  childThemeUrl =  $('#form__child_theme_url').val()
+  version = $('#form__version').val()
+  parentThemeName = $('#form__parent_theme_name').val()
+  authorName = $('#form__author_name').val()
+  authorUrl = $('#form__author_url').val()
+
+  if childThemeName != '' && childThemeUrl != '' && version != '' && parentThemeName != '' && authorName != '' && authorUrl != ''
+
+    # Child Theme Name (Val)
+    console.log('Theme Name: ' + childThemeName)
+
+    # Child Theme URL (Val)
+    console.log('Theme URL: ' + childThemeUrl)
+
+    # Version (Val)
+    console.log('Version: ' + version)
+
+    # Parent Theme Name (Val)
+    console.log('Parent Theme: ' + parentThemeName)
+
+    # Author Name (Val)
+    console.log('Author Name: ' + authorName)
+
+    # Author URL (Val)
+    console.log('Author URL: ' + authorUrl)
+  else
+    console.log('Not Valid');

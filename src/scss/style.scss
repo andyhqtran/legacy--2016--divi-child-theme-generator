@@ -92,6 +92,10 @@ a {
     font-size: rem(10);
     transform: translate(0, -50%);
     visibility: hidden;
+
+    &.error {
+      z-index: 1;
+    }
   }
 
   input {
