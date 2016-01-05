@@ -1,0 +1,17 @@
+&-sidebar {
+  flex-basis: $dashboard-sidebar-width;
+  width: $dashboard-sidebar-width;
+  max-width: $dashboard-sidebar-width;
+  min-width: $dashboard-sidebar-width;
+  border-right: $dashboard-border;
+
+  // Brand (Element)
+  &__brand {
+    padding: rem(40) rem(30);
+
+    h1 {
+      margin: 0;
+      font-weight: $light;
+    }
+  }
+}

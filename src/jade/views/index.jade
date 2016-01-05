@@ -1,3 +1,27 @@
 extend ../layout
 
 block content
+
+  // Dashboard (Parent Block)
+  .dashboard
+
+    // Dashboard Sidebar (Block)
+    .dashboard-sidebar
+
+      // Brand (Element)
+      .dashboard-sidebar__brand
+        h1=name
+
+      // Dashboard Nav (Block)
+      .dashboard-nav: ul
+
+        // Item:Active (Element:Modifier)
+        li.dashboard-nav__item.dashboard-nav__item--active: a(href='#home'
+                                  data-target='home') Home
+
+        // Item (Element)
+        li.dashboard-nav__item: a(href='#about'
+                                  data-target='about') About
+
+    // Dashboard Content (Block)
+    .dashboard-content

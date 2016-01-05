@@ -1,0 +1,15 @@
+// Base
+$base-background: linear-gradient(45deg, #F4EBE5, #E3D4CA);
+$base-font-color: $light-gray;
+$base-font-family: $body-font;
+$base-font-size: rem(12);
+$base-font-weight: $regular;
+$base-line-height: rem(14);
+
+// Dashboard
+$dashboard-background: $white;
+$dashboard-width: rem(600);
+$dashboard-sidebar-width: rem(200);
+$dashboard-border: rem(1) solid rgba($black, 0.05);
+$dashboard-border-radius: rem(4);
+$dashboard-box-shadow: 0 rem(10) rem(30) rgba($black, 0.1);

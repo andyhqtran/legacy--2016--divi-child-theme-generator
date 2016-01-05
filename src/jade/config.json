@@ -1,5 +1,6 @@
 {
-  "name": "Child Theme Builder",
+  "name": "Builder",
+  "title": "Builder | WordPress Child Theme Builder",
   "description": "WordPress Child Theme Generator",
   "author": "Andy Tran <hello@andytran.me>",
   "version": "0.0.1",

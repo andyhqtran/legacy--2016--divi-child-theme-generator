@@ -1,0 +1,25 @@
+&-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  // Item (Element)
+  &__item {
+    color: $light-gray;
+
+    a {
+      display: block;
+      padding: rem(20) rem(40);
+      color: inherit;
+      text-decoration: none;
+    }
+
+    // Active (Modifier)
+    &--active {
+      background: #F7F7F7;
+      color: $gray;
+    }
+  }
+}
