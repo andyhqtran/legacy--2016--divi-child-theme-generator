@@ -54,5 +54,16 @@ $('#form').submit ->
 
     # Author URL (Val)
     console.log('Author URL: ' + authorUrl)
+
+    zip = new JSZip()
+
+
+    zip.file('style.css', '/*\n Theme Name: ' + childThemeName + '\n Theme URI: ' + childThemeUrl + '\n Description: ' + childThemeName + ' Child Theme\n Author: ' + authorName + '\n Author URI: ' + authorUrl + '\n Template: ' + parentThemeName + '\n Version: ' + version + '\n License: GNU General Public License v2 or later\n License URI: http://www.gnu.org/licenses/gpl-2.0.html\n Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready\n Text Domain: ' + childThemeName.toLowerCase() + '\n */')
+
+    zip.file('functions.php', '<?php\n add_action( \'wp_enqueue_scripts\', \'theme_enqueue_styles\' );\n function theme_enqueue_styles() {\n   wp_enqueue_style( \'parent-style\', get_template_directory_uri() . \'/style.css\' );\n }\n ?>')
+
+    content = zip.generate({type:"blob"})
+
+    saveAs(content, childThemeName + '.zip')
   else
     console.log('Not Valid');

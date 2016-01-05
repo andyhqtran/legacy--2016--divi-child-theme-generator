@@ -20,6 +20,7 @@
     "jquery": "~2.1.4",
     "jquery-ui": "~1.11.4",
     "jszip": "Stuk/jszip#~2.5.0",
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "file-saver.js": "~1.20150507.2"
   }
 }
