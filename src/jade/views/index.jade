@@ -25,3 +25,51 @@ block content
 
     // Dashboard Content (Block)
     .dashboard-content
+
+      // Panel:Active (Element:Modifier)
+      .dashboard-content__panel.dashboard-content__panel--active(data-panel='home')
+        form
+
+          .input-group
+            input(type='text'
+                  id='form__child_theme_name'
+                  placeholder='Theme Name'
+                  required='')
+            label(for='form__child_theme_name') Theme Name
+
+          .input-group
+            input(type='text'
+                  id='form__child_theme_name'
+                  placeholder='Theme Name Url')
+            label(for='form__child_theme_name') Theme URL
+
+          .input-group
+            input(type='number'
+                  id='form__version'
+                  placeholder='Version'
+                  required='')
+            label(for='form__version') Version
+
+          .input-group
+            input(type='text'
+                  placeholder='Parent Theme Name'
+                  required='')
+            label(for='form__parent_theme_name') Parent Theme
+
+          .input-group
+            input(type='text'
+                  id='form__author_name'
+                  placeholder='Author')
+            label(for='form__author_name') Author
+
+          .input-group
+            input(type='text'
+                  id='form__author_url'
+                  placeholder='Author Url')
+            label(for='form__author_url') Author URL
+
+          .input-group
+            button(type='submit') Create
+
+      // Panel (Element)
+      .dashboard-content__panel(data-panel='home')

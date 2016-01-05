@@ -42,10 +42,73 @@ body {
   margin: 100px auto;
   border-radius: $dashboard-border-radius;
   box-shadow: $dashboard-box-shadow;
+  overflow: hidden;
 
   // Sidebar (Block)
   @import "partials/sidebar";
 
   // Nav (Block)
   @import "partials/nav";
+
+  // Content (Block)
+  @import "partials/content";
+}
+
+.input-group {
+  position: relative;
+  background: $white;
+  width: 100%;
+  border-bottom: $dashboard-border;
+
+  &:nth-last-child(2),
+  &:last-child {
+    border: 0;
+  }
+
+  &:hover {
+    label {
+      visibility: visible;
+    }
+  }
+
+  label {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    display: block;
+    background: #F7F7F7;
+    padding: rem(4) rem(8);
+    border-radius: rem(4);
+    color: $gray;
+    font-size: rem(10);
+    transform: translate(0, -50%);
+    visibility: hidden;
+  }
+
+  input {
+    outline: none;
+    background: 0;
+    width: 100%;
+    padding: rem(20);
+    border: 0;
+    box-sizing: border-box;
+    letter-spacing: rem(2);
+
+    &:focus {
+      ~ label {
+        visibility: visible;
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+    outline: none;
+    background: #B0D2D1;
+    width: 100%;
+    padding: rem(20);
+    border: 0;
+    color: $white;
+    letter-spacing: rem(2);
+  }
 }
