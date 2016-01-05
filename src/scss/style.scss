@@ -105,6 +105,7 @@ a {
     padding: rem(20);
     border: 0;
     box-sizing: border-box;
+    font-size: rem(10);
     letter-spacing: rem(2);
 
     &:focus {
@@ -126,6 +127,7 @@ a {
     padding: rem(20);
     border: 0;
     color: $white;
+    font-size: rem(10);
     letter-spacing: rem(2);
   }
 }
